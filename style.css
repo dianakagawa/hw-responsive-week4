@@ -1,0 +1,135 @@
+/* <uniquifier>: Use a unique and descriptive class name
+ * <weight>: Use a value from 400 to 900 */
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --Playfair-Display: "Playfair Display", serif;
+  --Poppins: "Poppins", sans-serif;
+}
+
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero h2 {
+  font-size: 36px !important;
+  font-family: var(--Poppins);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hero h1 {
+  font-size: 96px !important;
+  font-family: var(--Playfair-Display);
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hero h3 {
+  font-size: 24px !important;
+  font-family: var(--Playfair-Display);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 18px !important;
+  font-family: var(--Poppins);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.btn-contact {
+  background: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: var(--secondary-color);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.description {
+  padding: 75px 60px;
+}
+
+main h2 {
+  font-size: 64px !important;
+  font-family: var(--Playfair-Display);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btn-learn {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+
+.btn-learn:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 48px !important;
+  }
+
+  .hero h2 {
+    font-size: 24px !important;
+  }
+
+  .hero h3 {
+    font-size: 18px !important;
+  }
+
+  .description {
+    padding: 75px 20px;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  main h2 {
+    font-size: 36px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .description {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .btn-contact {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .btn-learn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
